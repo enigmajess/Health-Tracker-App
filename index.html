@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Tracker App</title>
+  </head>
+  <body>
+    <div id="tracker">
+      <form>
+        <h1>Daily Tracker</h1>
+        <div id="grateful">
+          <h3>I'm Grateful For...</h3>
+          <input type="text" />
+        </div>
+        <div id="mood">
+          <h3>Mood</h3>
+          <div class="container">
+            <div class="moji">😄</div>
+            <div class="slider">
+              <span>Horrible</span>
+              <input
+                id="moodrange"
+                type="range"
+                value="0"
+                min="0"
+                max="10"
+                step="1"
+              />
+              <span>Fantastic!</span>
+            </div>
+          </div>
+        </div>
+        <div id="self care">
+          <h3>Self Care</h3>
+          <input type="text" />
+        </div>
+        <div id="goal">
+          <h3>Goal</h3>
+          <input type="text" />
+        </div>
+        <div id="water">
+          <h3>Water</h3>
+          <div id="ozdrank">0 oz</div>
+          <input id="waterRange" type='range' min="0" max="64"/>
+        </div>
+        <div id="sleep">
+          <h3>Sleep</h3>
+          <div id="hoursslept">0 h</div>
+          <input id="hoursSleptRange" type="range" min="0" max="9"/>
+        </div>
+        <div id="activity">
+          <h3>Activity Type</h3>
+          <input type="text" />
+        </div>
+        <div id="symptoms">
+          <h3>Symptoms</h3>
+          <input type="text" />
+        </div>
+        <button id="save">SAVE</button>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
